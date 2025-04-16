@@ -12,11 +12,8 @@ import com.hospital.enums.AppointmentStatus;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
 @Builder
 @Entity
-
 public class Appointments {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

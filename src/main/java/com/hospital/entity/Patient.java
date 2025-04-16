@@ -35,4 +35,7 @@ public class Patient {
     @OneToMany(mappedBy = "patient", fetch = FetchType.LAZY)
     @JsonBackReference
     private List<Appointments> appointments = new ArrayList<>();
+    
+    @OneToMany
+    private List<DailyVitalsReport> allDailyVitals = new ArrayList<>();
 }
